@@ -4,7 +4,6 @@
 #include <sourcemod>
 #include <sdktools>
 #include <sdkhooks>
-#include <cstrike>
 
 public Plugin my_info =
 {
@@ -31,7 +30,7 @@ ConVar sm_nodamage;
 
 public void OnPluginStart()
 {
-    sm_nodamage = CreateConVar("nodamage", "1", "Disable Damage");
+    sm_nodamage = CreateConVar("sm_nodamage", "1", "Disable Damage");
     PrintToServer("[SM] NoDamage initialized");
 }
 
